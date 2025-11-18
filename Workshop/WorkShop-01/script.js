@@ -25,13 +25,13 @@
 // const squares=numbers.map(num=>num*num);
 // console.log(squares);
 
-// const name="gauri";
+// const name="shreyash";
 // const age=19;
 // console.log("Hello,my name is "+name+" and I am "+ age+" years old");
 // console.log(`Hello,my name is ${name} and I am ${age} years old, i was born in the year ${2025-age}`);
 
-// const user="Gauri";
-// const points=120;
+// const user="shreyash";
+// const points=10;
 // console.log(`Hey ${user} you have ${points} points!`);
 
 // const person={
@@ -77,8 +77,7 @@
 
 //Rest parameters
 // const arr=[1,2,3,4,5,6,7,8,9];
-// const[first,second,...rest]=arr; //equalto ke left me rest 
-// console.log(first);              //equalto ke right me spread
+// const[first,second,...rest]=arr; 
 // console.log(second);  
 // console.log(rest);  
 // console.log(arr);                              
@@ -97,10 +96,10 @@
 // };
 
 //Asynchronous Javascript 
-// console.log(20);
-// console.log(30);
+// console.log(720);
+// console.log(930);
 // console.log(40);
-// setTimeout(() => console.log("hello"),2000);
+// setTimeout(() => console.log("hello"),3000);
 // console.log(50);
 
 // let count=1;
