@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .small-box {
+        width: 200px;
+        height: 200px;
+        background-color: teal;
+      }
+      .big-box {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="small-box" id="box"></div>
+    <button id="btn"></button>
+    <script>
+      const body = document.querySelector("body");
+      const box = document.querySelector("#box");
+      const btn = document.querySelector("#btn");
+      btn.textContent = "click me!";
+      btn.addEventListener("click", function () {
+        box.classList.remove("small-box");
+        box.classList.add("big-box");
+      });
+    </script>
+  </body>
+</html>

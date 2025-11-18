@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile Card Studio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>PROFILE CARD </h1>
+    <main id="app">
+
+        <section id="profileCard" class="card">
+            <div class="card-header">
+                <img id="profileImage" src="https://via.placeholder.com/400x200?text=Profile" alt="Profile image">
+            </div>
+
+            <div class="card-body">
+                <h1 id="profileName" class="profile-name">Write Your name</h1>
+                <h4 id="profileRole" class="profile-role">Frontend Engineer</h4>
+                <p id="profileBio" class="profile-bio">A short bio goes here. Try adding multiple lines in the textarea.</p>
+
+                <h5>Skills</h5>
+                <div id="skillsContainer" class="skills" aria-live="polite">
+
+                </div>
+
+                <div id="details" class="details">
+                    <p><strong>Email:</strong> shreyash.agrawal3004@gmail.com</p>
+                    <p><strong>Location:</strong> India</p>
+                    <p><strong>Joined:</strong> NOV 2025</p>
+                </div>
+            </div>
+        </section>
+
+
+        <aside id="controls" class="control-panel">
+            <h3>Controls</h3>
+
+            <label for="inputName">Name</label>
+            <input id="inputName" type="text" placeholder="Type a name">
+
+            <label for="inputRole">Role</label>
+            <input id="inputRole" type="text" placeholder="Type a role">
+
+            <label for="inputBio">Bio (multiline works)</label>
+            <textarea id="inputBio" rows="4" placeholder="Write a short bio of yours here"></textarea>
+
+            <label for="inputImageUrl">Image URL</label>
+            <div class="row">
+                <input id="inputImageUrl" type="text" placeholder="Paste image url">
+                <button id="btnSetImage">Set</button>
+            </div>
+            <div id="imgError" class="error" role="status" aria-live="polite"></div>
+
+            <hr>
+
+            <label for="inputSkill">Add skill</label>
+            <div class="row">
+                <input id="inputSkill" type="text" placeholder="e.g. JavaScript">
+                <button id="btnAddSkill">Add</button>
+                <button id="btnRemoveLast">Remove last</button>
+            </div>
+            <small>Press Enter to add. Esc clears input.</small>
+
+            <hr>
+
+            <label>Theme</label>
+            <div id="themes" class="theme-list">
+                <button class="theme active" data-color="white">Default</button>
+                <button class="theme" data-color="#f0f7ff">Blue</button>
+                <button class="theme" data-color="#f0fff4">Green</button>
+                <button class="theme" data-color="#fff7e6">Warm</button>
+            </div>
+
+            <hr>
+
+            <button id="btnToggleDetails">Hide details</button>
+
+            <hr>
+            <button id="btnLogChildren">Log card children (mini-challenge)</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

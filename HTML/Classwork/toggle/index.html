@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .small-box{
+            width:200px;
+            height:200px;
+            background-color: teal;
+        }
+        .big-box{
+            width:400px;
+            height:400px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const body = document.querySelector("body");
+        const box = document.createElement("div");
+        const btn = document.createElement("button");
+        btn.textContent ="CLICK ME!";
+        box.classList.add("small-box");
+        body.appendChild(box);
+        body.appendChild(btn);
+        
+        let flag = 0;
+        btn.addEventListener("click", function () {
+            if (flag === 0) {
+                box.classList.add("big-box");
+                box.classList.remove("small-box");
+                flag = 1;
+            } else {
+                box.classList.add("small-box");
+                box.classList.remove("big-box");
+                flag = 0;
+            }
+        });
+    </script>
+</body>
+</html>
